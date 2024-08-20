@@ -1,36 +1,51 @@
-import React, { useRef, useEffect, useState } from 'react';
-import Script from 'next/script'; // Para melhor manejo de scripts externos
-import { VslContent } from './styles';
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/no-unescaped-entities */
+import React, { useRef, useEffect, useState } from 'react'
+import { VslContent } from './styles'
 
 export function Vsl() {
-  const meuIframeRef = useRef<HTMLIFrameElement>(null);
-  const [iframeHeight, setIframeHeight] = useState('');
+  const meuIframeRef = useRef<HTMLIFrameElement>(null)
+  const [iframeHeight, setIframeHeight] = useState('')
+
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src =
+      'https://scripts.converteai.net/36581e86-3fe7-44d1-89e4-c5eb502798e8/players/65af118a5a68c1000982c45d/player.js'
+    script.async = true
+    document.head.appendChild(script)
+
+    return () => {
+      document.head.removeChild(script)
+    }
+  }, [])
 
   // Função para ajustar a altura do iframe com base na largura
   const ajustarAltura = () => {
     if (meuIframeRef.current) {
-      const width = meuIframeRef.current.clientWidth; // Obter a largura do iframe
-      const scaleFactor = 0.56267; // Fator de escala
-      const newHeight = `${width * scaleFactor}px`; // Calcula a nova altura em pixels
-      setIframeHeight(newHeight); // Define a nova altura para o estado
+      const width = meuIframeRef.current.clientWidth // Obter a largura do iframe
+      const scaleFactor = 0.56267 // Fator de escala de 10%, você pode ajustar conforme necessário
+      const newHeight = `${width * scaleFactor}px` // Calcula a nova altura em pixels
+      setIframeHeight(newHeight) // Define a nova altura para o estado
     }
-  };
+  }
 
   // Chamando a função ajustarAltura quando o componente for renderizado e toda vez que o tamanho da janela mudar
   useEffect(() => {
-    ajustarAltura();
-    const handleResize = () => ajustarAltura();
-    window.addEventListener('resize', handleResize);
+    ajustarAltura()
+    const handleResize = () => ajustarAltura()
+    window.addEventListener('resize', handleResize)
 
+    // Remover o listener quando o componente for desmontado para evitar memory leaks
     return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   return (
     <>
       <div
-        id="vid_66c4bb6377838e000c738a12"
+        id="vid_65af118a5a68c1000982c45d"
         style={{
           position: 'relative',
           width: '100%',
@@ -40,7 +55,7 @@ export function Vsl() {
         }}
       >
         <img
-          id="thumb_66c4bb6377838e000c738a12"
+          id="thumb_65af118a5a68c1000982c45d"
           src="https://images.converteai.net/36581e86-3fe7-44d1-89e4-c5eb502798e8/players/65af118a5a68c1000982c45d/thumbnail.jpg"
           style={{
             position: 'absolute',
@@ -53,7 +68,7 @@ export function Vsl() {
           }}
         />
         <div
-          id="backdrop_66c4bb6377838e000c738a12"
+          id="backdrop_65af118a5a68c1000982c45d"
           style={{
             position: 'absolute',
             top: 0,
@@ -64,17 +79,53 @@ export function Vsl() {
           }}
         />
       </div>
-      <Script
-        id="scr_66c4bb6377838e000c738a12"
-        type="text/javascript"
-        src="https://scripts.converteai.net/36581e86-3fe7-44d1-89e4-c5eb502798e8/ab-test/66c4bb6377838e000c738a12/player.js"
-        strategy="lazyOnload"
-      />
       <style jsx>{`
         .elementor-element:has(#smartplayer) {
           width: 100%;
         }
       `}</style>
     </>
-  );
+  )
+}
+
+export function Vsl2() {
+  const meuIframeRef = useRef<HTMLIFrameElement>(null)
+  const [iframeHeight, setIframeHeight] = useState('')
+
+  // Função para ajustar a altura do iframe com base na largura
+  const ajustarAltura = () => {
+    if (meuIframeRef.current) {
+      const width = meuIframeRef.current.clientWidth // Obter a largura do iframe
+      const scaleFactor = 0.56267 // Fator de escala de 10%, você pode ajustar conforme necessário
+      const newHeight = `${width * scaleFactor}px` // Calcula a nova altura em pixels
+      setIframeHeight(newHeight) // Define a nova altura para o estado
+    }
+  }
+
+  // Chamando a função ajustarAltura quando o componente for renderizado e toda vez que o tamanho da janela mudar
+  useEffect(() => {
+    ajustarAltura()
+    const handleResize = () => ajustarAltura()
+    window.addEventListener('resize', handleResize)
+
+    // Remover o listener quando o componente for desmontado para evitar memory leaks
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  return (
+    <VslContent>
+      <iframe
+        ref={meuIframeRef}
+        id="ifr_666b1ad3d2a7d5000ba05b92"
+        src="https://scripts.converteai.net/36581e86-3fe7-44d1-89e4-c5eb502798e8/players/666b1ad3d2a7d5000ba05b92/embed.html"
+        allowFullScreen={false}
+        style={{
+          height: iframeHeight,
+          border: 'none',
+        }}
+      />
+    </VslContent>
+  )
 }
