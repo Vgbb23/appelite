@@ -118,8 +118,8 @@ export function Vsl2() {
     <VslContent>
       <iframe
         ref={meuIframeRef}
-        id="ifr_666b1ad3d2a7d5000ba05b92"
-        src="https://scripts.converteai.net/36581e86-3fe7-44d1-89e4-c5eb502798e8/players/666b1ad3d2a7d5000ba05b92/embed.html"
+        id="scr_66c4bb6377838e000c738a12"
+        src="https://scripts.converteai.net/36581e86-3fe7-44d1-89e4-c5eb502798e8/ab-test/66c4bb6377838e000c738a12/player.js"
         allowFullScreen={false}
         style={{
           height: iframeHeight,
