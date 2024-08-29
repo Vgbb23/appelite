@@ -209,7 +209,7 @@ export default function TermosDeUso() {
             <li>Seção 9 - Contato</li>
             <p>
               Caso você tenha qualquer dúvida sobre os Termos de Uso, por favor,
-              entre em contato pelo e-mail contato@terapeutatransforma.com.br.
+              entre em contato pelo e-mail contato@ajudahoje.com.br.
             </p>
           </TermsSecao>
         </TermsContent>
