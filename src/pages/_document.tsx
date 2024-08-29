@@ -11,12 +11,13 @@ export default function Document() {
           dangerouslySetInnerHTML={{ __html: getCssText() }}
         />
         <script>
-          window.pixelId = "6699829a9b480652bf85e39a"; var a =
-          document.createElement("script"); a.setAttribute("async", "");
-          a.setAttribute("defer", ""); a.setAttribute("src",
-          "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-          document.head.appendChild(a);
-        </script>
+  window.pixelId = "66d0fdb34f04fa44c5955f2c";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
       </Head>
       <body>
         <Main />
