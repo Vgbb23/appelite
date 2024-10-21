@@ -78,7 +78,7 @@ export default function Home() {
   const handleWithdraw = () => {
     const saqueValueAsNumber = parseFloat(saqueValue.replace(',', '.'))
 
-    if (saqueValueAsNumber > 114,27) {
+    if (saqueValueAsNumber > 114.27) {
       alert('O saque máximo é de 114,26 reais.')
     } else {
       setModalVisible(true)
