@@ -111,7 +111,7 @@ export default function Home() {
                 ganhos="25,00"
                 marca="Mini Liquidificador Portátil"
                 foto={liqui}
-                pergunta1="Sobre o Mini Liquidificador, você já teve interesse em adquirir esse produto?"
+                pergunta1="Sobre o Mini Liquidificador Portátil, você já teve interesse em adquirir esse produto?"
                 resposta1="Sim"
                 resposta2="Não"
                 pergunta2="Você investiria R$ 67,99 nesse produto?"
