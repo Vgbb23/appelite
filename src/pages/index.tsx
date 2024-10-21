@@ -110,7 +110,7 @@ export default function Home() {
               <Questionario
                 ganhos="25,00"
                 marca="Mini Liquidificador Portátil"
-                foto={Umidi}
+                foto={liqui}
                 pergunta1="Sobre o Mini Liquidificador, você já teve interesse em adquirir esse produto?"
                 resposta1="Sim"
                 resposta2="Não"
