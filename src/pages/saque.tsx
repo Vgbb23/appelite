@@ -110,7 +110,7 @@ export default function Home() {
               <PixKeySelector>
                 <InputLabel>Valor:</InputLabel>
                 <InputSaque>
-                  <p>R$</p>
+                  <p>R$114,26</p>
                   <Input
                     type="number"
                     placeholder={'114,26'}

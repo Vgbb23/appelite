@@ -8,7 +8,7 @@ interface ButtonProps {
 export default function BuyButton2({ title }: ButtonProps) {
   return (
     <>
-      <ButtonContainer href="https://pepper.com.br/checkout/index.html?p=100668&o=117314">
+      <ButtonContainer href="https://go.perfectpay.com.br/PPU38CNT8HG?upsell=true">
         <LockSimpleOpen size={30} color="#fff" weight="fill" /> {title}
       </ButtonContainer>
     </>
