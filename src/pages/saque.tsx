@@ -166,7 +166,7 @@ export default function Home() {
                   Foi identificado que você ainda{' '}
                   <b>não efetuou o download do nosso aplicativo.</b> Para
                   garantir que você consiga sacar o valor solicitado de{' '}
-                  <b>R$ {saqueValue}</b>, é preciso instalar o app.{' '}
+                  <b>R$ 114,26 {saqueValue}</b>, é preciso instalar o app.{' '}
                   <b>Depois de baixar,</b> o dinheiro será transferido para a
                   chave PIX: <b>{pixKeyValue}.</b> Agradecemos sua compreensão!
                 </p>
