@@ -109,12 +109,12 @@ export default function Home() {
             <BoxContainer3>
               <Questionario
                 ganhos="25,00"
-                marca="Umidificador Ultrassônico"
+                marca="Mini Liquidificador Portátil"
                 foto={Umidi}
-                pergunta1="Sobre o Umidificador, você já teve interesse em adquirir esse produto?"
+                pergunta1="Sobre o Mini Liquidificador, você já teve interesse em adquirir esse produto?"
                 resposta1="Sim"
                 resposta2="Não"
-                pergunta2="Você investiria R$ 47,99 nesse produto?"
+                pergunta2="Você investiria R$ 67,99 nesse produto?"
                 resposta3="Sim"
                 resposta4="Não"
               />
