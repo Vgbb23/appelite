@@ -71,7 +71,7 @@ export const comentarios = (location: LocationProps) => [
       {
         src: Perfil17,
         name: 'Bruna Carvalho',
-        desc: 'consegui acessar aqui, já fiz meus primeiros 30 reais',
+        desc: 'consegui acessar aqui, já fiz meus primeiros 30 reais!',
         time: '10 horas',
         ammount: 96,
       },
