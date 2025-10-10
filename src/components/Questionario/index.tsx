@@ -14,18 +14,20 @@ import {
   SelectContainer,
 } from './styles'
 import Image, { StaticImageData } from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface QuestionarioProps {
   ganhos: string
   marca: string
-  foto: StaticImageData
+  foto: StaticImageData | string
   pergunta1: string
   resposta1: string
   resposta2: string
   pergunta2: string
   resposta3: string
   resposta4: string
+  onAllAnswered?: (allAnswered: boolean) => void
+  resetTrigger?: number
 }
 
 export default function Questionario({
@@ -38,6 +40,8 @@ export default function Questionario({
   pergunta2,
   resposta3,
   resposta4,
+  onAllAnswered,
+  resetTrigger,
 }: QuestionarioProps) {
   const [selectedButton, setSelectedButton] = useState<number | null>(null)
 
@@ -56,6 +60,21 @@ export default function Questionario({
   const handleButtonClick3 = (buttonIndex3: number) => {
     setSelectedButton3(buttonIndex3 === selectedButton3 ? null : buttonIndex3)
   }
+
+  // Verifica se todas as perguntas foram respondidas
+  useEffect(() => {
+    const allAnswered = selectedButton !== null && selectedButton2 !== null && selectedButton3 !== null
+    if (onAllAnswered) {
+      onAllAnswered(allAnswered)
+    }
+  }, [selectedButton, selectedButton2, selectedButton3, onAllAnswered])
+
+  // Reset dos estados quando resetTrigger muda
+  useEffect(() => {
+    setSelectedButton(null)
+    setSelectedButton2(null)
+    setSelectedButton3(null)
+  }, [resetTrigger])
   return (
     <>
       <QuestionContainer>
@@ -66,7 +85,7 @@ export default function Questionario({
         <h3>RESPONDA E GANHE R$ {ganhos}</h3>
         <p>Pagamento feito por Pix</p>
       </RespondaContainer>
-      <Image alt="nubank" quality={100} src={foto} width={230} />
+      <Image alt="produto" quality={100} src={foto} width={230} height={230} />
       <SelectContainer>
         <p>De 0 a 5, que nota você dá para o {marca}?</p>
         <SelectConent>

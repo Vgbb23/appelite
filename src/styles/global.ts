@@ -37,4 +37,16 @@ export const globalStyles = globalCss({
     fontFamily: '$default',
     fontWeight: '400',
   },
+
+  '@keyframes pulse': {
+    '0%': {
+      boxShadow: '0 4px 15px rgba(244, 107, 69, 0.1)',
+    },
+    '50%': {
+      boxShadow: '0 6px 25px rgba(244, 107, 69, 0.2)',
+    },
+    '100%': {
+      boxShadow: '0 4px 15px rgba(244, 107, 69, 0.1)',
+    },
+  },
 })

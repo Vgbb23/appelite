@@ -63,16 +63,34 @@ export const BoxContainer = styled('div', {
     alignItems: 'center',
     justifyContent: 'center',
     gap: '.4rem',
+    border: 'none',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+    boxShadow: '0 4px 15px rgba(244, 107, 69, 0.3)',
+
+    '&:hover:not(:disabled)': {
+      transform: 'translateY(-2px)',
+      boxShadow: '0 6px 20px rgba(244, 107, 69, 0.4)',
+    },
+
+    '&:active:not(:disabled)': {
+      transform: 'translateY(0px)',
+    },
 
     '&:disabled': {
       background: '#ccc',
       cursor: 'not-allowed',
+      transform: 'none',
+      boxShadow: 'none',
     },
   },
 
   h1: {
-    fontSize: '2.2rem',
-    fontWeight: '500',
+    fontSize: '1.6rem',
+    fontWeight: '600',
+    textAlign: 'center',
+    lineHeight: '1.3',
+    marginBottom: '0.5rem',
   },
 
   img: {
@@ -80,8 +98,13 @@ export const BoxContainer = styled('div', {
   },
 
   input: {
-    border: '1px solid #ff580c',
+    border: '2px solid #ff580c',
     outline: 'none',
+    transition: 'all 0.3s ease',
+    '&:focus': {
+      borderColor: '#f46b45',
+      boxShadow: '0 0 0 3px rgba(244, 107, 69, 0.1)',
+    },
   },
 })
 
@@ -283,14 +306,30 @@ export const InputContainer = styled('div', {
 
   p: {
     fontSize: '1rem',
-    fontWeight: '400',
+    fontWeight: '500',
+    color: '#333',
+    marginBottom: '0.5rem',
   },
 
   input: {
     width: 350,
     borderRadius: 15,
-    padding: '.6rem 1rem',
-    fontSize: '1.2rem',
+    padding: '.8rem 1rem',
+    fontSize: '1.1rem',
+    backgroundColor: '#fff',
+    border: '2px solid #ff580c',
+    transition: 'all 0.3s ease',
+
+    '&:focus': {
+      borderColor: '#f46b45',
+      boxShadow: '0 0 0 3px rgba(244, 107, 69, 0.1)',
+      outline: 'none',
+    },
+
+    '&::placeholder': {
+      color: '#999',
+      fontSize: '1rem',
+    },
 
     '@media (max-width: 768px)': {
       width: '100%',
