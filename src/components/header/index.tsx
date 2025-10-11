@@ -18,7 +18,7 @@ export default function Header({ price }: HeaderProps) {
           <Image alt="logo" quality={100} src={Logo2} width={100} />
         </HeaderImg2>
 
-        <p>SALDO: R$ {price}</p>
+        <p>SALDO: R$ <span data-premium-number="true">{price}</span></p>
       </HeaderContent>
     </HeaderContainer>
   )

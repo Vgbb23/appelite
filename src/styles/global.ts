@@ -8,22 +8,25 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    color: '#fff',
-    background: '#fff',
+    color: '#0A0A0A',
+    background: 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%)',
     overflowX: 'hidden',
     textAlign: 'center',
-
+    fontFamily: "'Playfair Display', Georgia, serif",
+    
     '-webkit-font-smoothing': 'antialiased',
+    '-moz-osx-font-smoothing': 'grayscale',
 
     '&::-webkit-scrollbar': {
-      width: '5px',
+      width: '8px',
     },
     '&::-webkit-scrollbar-track': {
-      backgroundColor: 'rgba(28, 28, 28, 0.332)',
+      backgroundColor: '#1A1A1A',
     },
     '&::-webkit-scrollbar-thumb': {
-      background: 'linear-gradient(#557c93, #08203e)',
+      background: 'linear-gradient(180deg, #D4AF37 0%, #B8941F 100%)',
       borderRadius: 10,
+      border: '2px solid #1A1A1A',
     },
   },
 
@@ -34,19 +37,56 @@ export const globalStyles = globalCss({
   },
 
   'body, input, textarea, button': {
-    fontFamily: '$default',
+    fontFamily: "'Playfair Display', Georgia, serif",
     fontWeight: '400',
   },
 
-  '@keyframes pulse': {
+  // Estilos específicos para números e valores monetários
+  '.premium-number, [data-premium-number="true"]': {
+    fontFamily: "'JetBrains Mono', 'Fira Code', 'Consolas', monospace",
+    fontWeight: '600',
+    letterSpacing: '0.5px',
+    fontVariantNumeric: 'tabular-nums',
+  },
+
+  '@keyframes shimmer': {
     '0%': {
-      boxShadow: '0 4px 15px rgba(244, 107, 69, 0.1)',
-    },
-    '50%': {
-      boxShadow: '0 6px 25px rgba(244, 107, 69, 0.2)',
+      backgroundPosition: '-1000px 0',
     },
     '100%': {
-      boxShadow: '0 4px 15px rgba(244, 107, 69, 0.1)',
+      backgroundPosition: '1000px 0',
+    },
+  },
+
+  '@keyframes goldPulse': {
+    '0%': {
+      boxShadow: '0 0 20px rgba(212, 175, 55, 0.3), 0 0 40px rgba(212, 175, 55, 0.1)',
+    },
+    '50%': {
+      boxShadow: '0 0 30px rgba(212, 175, 55, 0.5), 0 0 60px rgba(212, 175, 55, 0.2)',
+    },
+    '100%': {
+      boxShadow: '0 0 20px rgba(212, 175, 55, 0.3), 0 0 40px rgba(212, 175, 55, 0.1)',
+    },
+  },
+
+  '@keyframes fadeInUp': {
+    '0%': {
+      opacity: 0,
+      transform: 'translateY(30px)',
+    },
+    '100%': {
+      opacity: 1,
+      transform: 'translateY(0)',
+    },
+  },
+
+  '@keyframes float': {
+    '0%, 100%': {
+      transform: 'translateY(0px)',
+    },
+    '50%': {
+      transform: 'translateY(-10px)',
     },
   },
 })

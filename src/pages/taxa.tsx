@@ -4,13 +4,27 @@ export default function TaxaPage() {
   return (
     <>
       <Head>
-        <title>Taxa de Verificação - ShopeeCash</title>
+        <title>Verificação Premium - Shopee Elite Club</title>
         <meta
           name="description"
-          content="Verificação de segurança para saque"
+          content="Verificação de segurança premium para saque VIP"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo2.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
         <script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           async
@@ -20,230 +34,323 @@ export default function TaxaPage() {
 
       <div
         style={{
-          backgroundColor: '#f8f9fa',
+          background: 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)',
           minHeight: '100vh',
           padding: '1rem',
-          fontFamily: 'Arial, sans-serif',
+          fontFamily: "'Playfair Display', Georgia, serif",
+          position: 'relative',
         }}
       >
-        {/* Header */}
         <div
           style={{
-            backgroundColor: '#e9ecef',
-            padding: '1rem',
-            borderRadius: '8px',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%)',
+            pointerEvents: 'none',
+            zIndex: 1,
+          }}
+        />
+        {/* Header Premium */}
+        <div
+          style={{
+            background: 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)',
+            borderBottom: '2px solid #D4AF37',
+            boxShadow: '0 4px 30px rgba(212, 175, 55, 0.2)',
+            padding: '1.5rem',
+            borderRadius: '15px',
             marginBottom: '1.5rem',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
+            position: 'relative',
+            zIndex: 2,
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
             <div
               style={{
-                width: '40px',
-                height: '40px',
-                backgroundColor: '#ff580c',
+                width: '50px',
+                height: '50px',
+                background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 100%)',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: 'white',
+                color: '#0A0A0A',
                 fontWeight: 'bold',
-                fontSize: '1.2rem',
+                fontSize: '1.5rem',
+                boxShadow: '0 4px 20px rgba(212, 175, 55, 0.4)',
+                border: '2px solid #F4E4B8',
               }}
             >
-              $
+              💎
             </div>
             <div>
               <div
                 style={{
-                  color: '#ff580c',
-                  fontWeight: 'bold',
-                  fontSize: '1.1rem',
+                  color: '#D4AF37',
+                  fontWeight: '700',
+                  fontSize: '1.2rem',
+                  fontFamily: "'Playfair Display', serif",
+                  letterSpacing: '1px',
+                  textShadow: '0 2px 10px rgba(212, 175, 55, 0.3)',
                 }}
               >
-                Shopee
+                Shopee Elite Club
               </div>
-              <div style={{ color: '#333', fontSize: '0.9rem' }}>Cash</div>
+              <div style={{ color: '#F4E4B8', fontSize: '0.9rem', fontWeight: '500' }}>
+                Programa VIP
+              </div>
             </div>
           </div>
           <div
             style={{
-              backgroundColor: '#ff580c',
-              color: 'white',
-              padding: '0.5rem 1rem',
-              borderRadius: '20px',
-              fontSize: '0.9rem',
-              fontWeight: 'bold',
+              background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
+              color: '#0A0A0A',
+              padding: '0.8rem 1.5rem',
+              borderRadius: '50px',
+              fontSize: '1rem',
+              fontWeight: '700',
+              letterSpacing: '1px',
+              textTransform: 'uppercase',
+              boxShadow: '0 4px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+              border: '2px solid #F4E4B8',
+              fontFamily: "'Playfair Display', serif",
+              animation: 'goldPulse 2s infinite ease-in-out',
             }}
           >
-            SALDO: R$ 293,96
+            SALDO: R$ <span data-premium-number="true">418,95</span>
           </div>
         </div>
 
-        {/* Main Content */}
+        {/* Main Content Premium */}
         <div
           style={{
-            backgroundColor: 'white',
-            borderRadius: '12px',
+            background: 'linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%)',
+            borderRadius: '20px',
             padding: '2rem',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+            boxShadow: '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
             textAlign: 'center',
+            border: '2px solid #D4AF37',
+            position: 'relative',
+            zIndex: 2,
           }}
         >
-          <h1
+          <div
             style={{
-              fontSize: '2.5rem',
-              fontWeight: 'bold',
-              color: '#333',
-              marginBottom: '0.5rem',
+              position: 'absolute',
+              top: -2,
+              left: -2,
+              right: -2,
+              bottom: -2,
+              background: 'linear-gradient(45deg, #D4AF37, #F4E4B8, #D4AF37)',
+              borderRadius: 20,
+              opacity: 0.3,
+              filter: 'blur(15px)',
+              zIndex: -1,
+            }}
+          />
+          <div
+            style={{
+              background: 'linear-gradient(135deg, #D4AF37, #F4E4B8)',
+              padding: '0.5rem 2rem',
+              borderRadius: '30px',
+              fontSize: '0.9rem',
+              fontWeight: '700',
+              color: '#0A0A0A',
+              letterSpacing: '2px',
+              marginBottom: '1rem',
+              display: 'inline-block',
+              textTransform: 'uppercase',
             }}
           >
-            Parabéns!
+            VERIFICAÇÃO PREMIUM
+          </div>
+
+          <h1
+            style={{
+              fontSize: '2.2rem',
+              fontWeight: '700',
+              color: '#F4E4B8',
+              marginBottom: '1rem',
+              fontFamily: "'Playfair Display', serif",
+              textShadow: '0 2px 20px rgba(212, 175, 55, 0.5)',
+              letterSpacing: '1px',
+            }}
+          >
+            💎 Parabéns, Membro Elite!
           </h1>
 
           <p
             style={{
-              fontSize: '1.2rem',
-              color: '#666',
+              fontSize: '1.1rem',
+              color: '#C0C0C0',
               marginBottom: '1.5rem',
+              fontWeight: '500',
+              fontFamily: "'Playfair Display', serif",
             }}
           >
-            Você está a apenas um passo de sacar seus ganhos!
+            Você está a apenas um passo de sacar seus ganhos premium!
           </p>
 
-          {/* Progress Bar */}
+          {/* Progress Bar Premium */}
           <div
             style={{
-              backgroundColor: '#e9ecef',
-              borderRadius: '10px',
-              height: '20px',
+              background: 'linear-gradient(135deg, #2A2A2A 0%, #1A1A1A 100%)',
+              borderRadius: '15px',
+              height: '25px',
               marginBottom: '2rem',
               position: 'relative',
               overflow: 'hidden',
+              border: '2px solid #D4AF37',
+              boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)',
             }}
           >
             <div
               style={{
-                backgroundColor: '#28a745',
+                background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 100%)',
                 height: '100%',
-                width: '90%',
-                borderRadius: '10px',
+                width: '95%',
+                borderRadius: '12px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: 'white',
-                fontWeight: 'bold',
-                fontSize: '0.9rem',
+                color: '#0A0A0A',
+                fontWeight: '700',
+                fontSize: '1rem',
+                fontFamily: "'JetBrains Mono', monospace",
+                letterSpacing: '1px',
+                animation: 'goldPulse 2s infinite ease-in-out',
               }}
             >
-              90%
+              95%
             </div>
           </div>
 
-          {/* Current Balance */}
+          {/* Current Balance Premium */}
           <h2
             style={{
-              fontSize: '1.8rem',
-              fontWeight: 'bold',
-              color: '#333',
+              fontSize: '2rem',
+              fontWeight: '700',
+              color: '#F4E4B8',
               marginBottom: '1rem',
+              fontFamily: "'Playfair Display', serif",
+              textShadow: '0 2px 15px rgba(212, 175, 55, 0.4)',
             }}
           >
-            💰 Seus ganhos acumulados
+            💰 Seus ganhos premium acumulados
           </h2>
 
           <div
             style={{
               fontSize: '3rem',
-              fontWeight: 'bold',
-              color: '#28a745',
-              marginBottom: '2rem',
+              fontWeight: '700',
+              color: '#D4AF37',
+              marginBottom: '1.5rem',
+              fontFamily: "'JetBrains Mono', monospace",
+              letterSpacing: '2px',
+              textShadow: '0 0 30px rgba(212, 175, 55, 0.6)',
+              animation: 'goldPulse 2s infinite ease-in-out',
             }}
           >
-            R$ 293,96
+            R$ <span data-premium-number="true">418,95</span>
           </div>
 
-          {/* Warning Message */}
+          {/* Warning Message Premium */}
           <div
             style={{
-              backgroundColor: '#fff3cd',
-              border: '1px solid #ffeaa7',
-              borderRadius: '8px',
-              padding: '1.5rem',
-              marginBottom: '1.5rem',
+              background: 'rgba(212, 175, 55, 0.15)',
+              border: '2px solid rgba(212, 175, 55, 0.4)',
+              borderRadius: '15px',
+              padding: '2rem',
+              marginBottom: '2rem',
               textAlign: 'left',
+              boxShadow: '0 4px 20px rgba(212, 175, 55, 0.2)',
+            }}
+          >
+            <p
+              style={{
+                fontSize: '1.2rem',
+                color: '#F4E4B8',
+                margin: '0',
+                lineHeight: '1.7',
+                fontFamily: "'Playfair Display', serif",
+              }}
+            >
+              <strong style={{ color: '#D4AF37' }}>🚨 ATENÇÃO VIP!</strong> Você acaba de{' '}
+              <strong style={{ color: '#D4AF37', textShadow: '0 0 10px rgba(212, 175, 55, 0.5)' }}>
+                GANHAR R$ <span data-premium-number="true">418,95</span>
+              </strong>{' '}
+              em menos de 10 minutos! Este valor está{' '}
+              <strong style={{ color: '#D4AF37' }}>100% disponível</strong> para
+              saque VIP, mas precisamos de uma{' '}
+              <strong style={{ color: '#D4AF37' }}>
+                verificação de segurança premium
+              </strong>{' '}
+              obrigatória.
+            </p>
+          </div>
+
+          {/* Fee Explanation Premium */}
+          <div
+            style={{
+              background: 'linear-gradient(135deg, #2A2A2A 0%, #1A1A1A 100%)',
+              border: '2px solid rgba(212, 175, 55, 0.3)',
+              borderRadius: '15px',
+              padding: '2rem',
+              marginBottom: '2rem',
+              boxShadow: '0 4px 20px rgba(212, 175, 55, 0.2)',
             }}
           >
             <p
               style={{
                 fontSize: '1.1rem',
-                color: '#856404',
+                color: '#C0C0C0',
                 margin: '0',
-                lineHeight: '1.6',
+                lineHeight: '1.7',
+                fontFamily: "'Playfair Display', serif",
               }}
             >
-              <strong>🚨 ATENÇÃO!</strong> Você acaba de{' '}
-              <strong style={{ color: '#dc3545' }}>GANHAR R$ 293,96 </strong>
-              Este valor está{' '}
-              <strong style={{ color: '#dc3545' }}>100% disponível</strong> para
-              saque, mas precisamos de uma{' '}
-              <strong style={{ color: '#dc3545' }}>
-                verificação de segurança
+              <strong style={{ color: '#D4AF37' }}>🔒 Proteção Anti-Fraude Premium:</strong> Esta pequena taxa é{' '}
+              <strong style={{ color: '#D4AF37', textShadow: '0 0 10px rgba(212, 175, 55, 0.5)' }}>
+                100% REEMBOLSÁVEL
               </strong>{' '}
-              obrigatória.
-            </p>
-          </div>
-
-          {/* Fee Explanation */}
-          <div
-            style={{
-              backgroundColor: '#f8f9fa',
-              border: '1px solid #dee2e6',
-              borderRadius: '8px',
-              padding: '1.5rem',
-              marginBottom: '2rem',
-            }}
-          >
-            <p
-              style={{
-                fontSize: '1rem',
-                color: '#495057',
-                margin: '0',
-                lineHeight: '1.6',
-              }}
-            >
-              <strong>🔒 Proteção Anti-Fraude:</strong> Esta pequena taxa é{' '}
-              <strong style={{ color: '#dc3545' }}>100% REEMBOLSÁVEL</strong> e
-              será devolvida
-              <strong style={{ color: '#dc3545' }}>
-                {' '}
+              e será devolvida{' '}
+              <strong style={{ color: '#D4AF37' }}>
                 instantaneamente
               </strong>{' '}
               após confirmarmos sua identidade. É nossa política de segurança
-              obrigatória.
+              premium obrigatória.
             </p>
           </div>
 
-          {/* Urgency Message */}
+          {/* Urgency Message Premium */}
           <div
             style={{
-              backgroundColor: '#ff6b6b',
-              color: 'white',
-              borderRadius: '8px',
-              padding: '1rem',
-              marginBottom: '1.5rem',
-              fontSize: '1rem',
-              fontWeight: 'bold',
+              background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 100%)',
+              color: '#0A0A0A',
+              borderRadius: '15px',
+              padding: '1.5rem',
+              marginBottom: '2rem',
+              fontSize: '1.1rem',
+              fontWeight: '700',
               textAlign: 'center',
+              boxShadow: '0 4px 25px rgba(212, 175, 55, 0.4)',
+              border: '2px solid #F4E4B8',
+              fontFamily: "'Playfair Display', serif",
+              letterSpacing: '1px',
+              textTransform: 'uppercase',
+              animation: 'goldPulse 2s infinite ease-in-out',
             }}
           >
-            ⏰ ATENÇÃO: Este saldo expira em 24 horas caso não faça a
+            ⏰ ATENÇÃO VIP: Este saldo premium expira em 24 horas caso não faça a
             verificação!
           </div>
 
-          {/* Action Button */}
+          {/* Action Button Premium */}
           <button
             onClick={() =>
               window.open(
@@ -252,41 +359,54 @@ export default function TaxaPage() {
               )
             }
             style={{
-              backgroundColor: '#28a745',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
+              background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%)',
+              color: '#FFFFFF',
+              border: '2px solid #16a34a',
+              borderRadius: '40px',
               padding: '1rem 2rem',
-              fontSize: '1.2rem',
-              fontWeight: 'bold',
+              fontSize: '1.1rem',
+              fontWeight: '700',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
-              gap: '0.5rem',
+              justifyContent: 'center',
+              gap: '0.8rem',
               margin: '0 auto',
-              transition: 'background-color 0.3s ease',
-              boxShadow: '0 4px 12px rgba(40, 167, 69, 0.3)',
+              width: '90%',
+              maxWidth: '350px',
+              transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+              boxShadow: '0 6px 25px rgba(34, 197, 94, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+              letterSpacing: '0.5px',
+              textTransform: 'uppercase',
+              fontFamily: "'Playfair Display', serif",
+              position: 'relative',
+              overflow: 'hidden',
             }}
             onMouseOver={(e) => {
-              ;(e.target as HTMLElement).style.backgroundColor = '#218838'
+              ;(e.target as HTMLElement).style.transform = 'translateY(-2px) scale(1.02)'
+              ;(e.target as HTMLElement).style.boxShadow = '0 8px 30px rgba(34, 197, 94, 0.7)'
             }}
             onMouseOut={(e) => {
-              ;(e.target as HTMLElement).style.backgroundColor = '#28a745'
+              ;(e.target as HTMLElement).style.transform = 'translateY(0) scale(1)'
+              ;(e.target as HTMLElement).style.boxShadow = '0 6px 25px rgba(34, 197, 94, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3)'
             }}
           >
-            🔓 Liberar R$ 293,96 agora
+            🔓 Liberar R$ <span data-premium-number="true">418,95</span> agora
             <div
               style={{
                 width: '24px',
                 height: '24px',
-                backgroundColor: 'white',
-                borderRadius: '4px',
+                background: '#FFFFFF',
+                borderRadius: '6px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#28a745',
-                fontSize: '0.8rem',
+                color: '#16a34a',
+                fontSize: '1rem',
                 fontWeight: 'bold',
+                fontFamily: "'JetBrains Mono', monospace",
+                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.2)',
+                flexShrink: 0,
               }}
             >
               $

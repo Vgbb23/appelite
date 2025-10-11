@@ -81,12 +81,19 @@ export default function Questionario({
   return (
     <>
       <QuestionContainer>
-        <Question size={18} color="#000" />
-        <h3>Perguntas</h3>
+        <Question size={20} color="#D4AF37" weight="fill" />
+        <h3
+          style={{
+            color: '#F4E4B8',
+            fontFamily: "'Playfair Display', serif",
+          }}
+        >
+          Avaliação Elite
+        </h3>
       </QuestionContainer>
       <RespondaContainer>
-        <h3>RESPONDA E GANHE R$ {ganhos}</h3>
-        <p>Pagamento feito por Pix</p>
+        <h3>💎 GANHE R$ <span data-premium-number="true">{ganhos}</span> VIP</h3>
+        <p>Transferência Premium via PIX</p>
       </RespondaContainer>
       <Image alt="produto" quality={100} src={foto} width={230} height={230} />
       <SelectContainer>
@@ -157,10 +164,16 @@ export default function Questionario({
             style={{
               background:
                 selectedButton2 === 1
-                  ? 'linear-gradient(09deg, #f46b45, #eea849)'
-                  : '#ffff',
-              color: selectedButton2 === 1 ? '#fff' : '#000',
+                  ? 'linear-gradient(135deg, #D4AF37, #F4E4B8)'
+                  : '#2A2A2A',
+              color: selectedButton2 === 1 ? '#0A0A0A' : '#E0E0E0',
               transform: selectedButton2 === 1 ? 'scale(1.05)' : 'none',
+              border:
+                selectedButton2 === 1
+                  ? '2px solid #F4E4B8'
+                  : '2px solid #3A3A3A',
+              fontWeight: selectedButton2 === 1 ? '700' : '500',
+              fontFamily: "'Playfair Display', serif",
             }}
           >
             {resposta1}
@@ -171,10 +184,16 @@ export default function Questionario({
             style={{
               background:
                 selectedButton2 === 2
-                  ? 'linear-gradient(09deg, #f46b45, #eea849)'
-                  : '#ffff',
-              color: selectedButton2 === 2 ? '#fff' : '#000',
+                  ? 'linear-gradient(135deg, #D4AF37, #F4E4B8)'
+                  : '#2A2A2A',
+              color: selectedButton2 === 2 ? '#0A0A0A' : '#E0E0E0',
               transform: selectedButton2 === 2 ? 'scale(1.05)' : 'none',
+              border:
+                selectedButton2 === 2
+                  ? '2px solid #F4E4B8'
+                  : '2px solid #3A3A3A',
+              fontWeight: selectedButton2 === 2 ? '700' : '500',
+              fontFamily: "'Playfair Display', serif",
             }}
           >
             {resposta2}
@@ -189,10 +208,16 @@ export default function Questionario({
             style={{
               background:
                 selectedButton3 === 1
-                  ? 'linear-gradient(09deg, #f46b45, #eea849)'
-                  : '#ffff',
-              color: selectedButton3 === 1 ? '#fff' : '#000',
+                  ? 'linear-gradient(135deg, #D4AF37, #F4E4B8)'
+                  : '#2A2A2A',
+              color: selectedButton3 === 1 ? '#0A0A0A' : '#E0E0E0',
               transform: selectedButton3 === 1 ? 'scale(1.05)' : 'none',
+              border:
+                selectedButton3 === 1
+                  ? '2px solid #F4E4B8'
+                  : '2px solid #3A3A3A',
+              fontWeight: selectedButton3 === 1 ? '700' : '500',
+              fontFamily: "'Playfair Display', serif",
             }}
           >
             {resposta3}
@@ -203,10 +228,16 @@ export default function Questionario({
             style={{
               background:
                 selectedButton3 === 2
-                  ? 'linear-gradient(09deg, #f46b45, #eea849)'
-                  : '#ffff',
-              color: selectedButton3 === 2 ? '#fff' : '#000',
+                  ? 'linear-gradient(135deg, #D4AF37, #F4E4B8)'
+                  : '#2A2A2A',
+              color: selectedButton3 === 2 ? '#0A0A0A' : '#E0E0E0',
               transform: selectedButton3 === 2 ? 'scale(1.05)' : 'none',
+              border:
+                selectedButton3 === 2
+                  ? '2px solid #F4E4B8'
+                  : '2px solid #3A3A3A',
+              fontWeight: selectedButton3 === 2 ? '700' : '500',
+              fontFamily: "'Playfair Display', serif",
             }}
           >
             {resposta4}

@@ -4,12 +4,12 @@ import Head from 'next/head'
 import { Roboto } from 'next/font/google'
 import Check from '../../public/check.webp'
 import Pix from '../../public/pix.svg'
-import PowerBank from '../../public/powerbanknew.webp'
-import FoneJBL from '../../public/fonejbl.png'
-import Smartwatch from '../../public/smartwatch.jpg'
-import CopoStanley from '../../public/copostanley.webp'
-import TenisMeia from '../../public/tenismeiafeminino.webp'
-import MesaCabeceira from '../../public/mesa.webp'
+import AirPodsPro from '../../public/airpods.webp'
+import RoboAspirador from '../../public/roboaspirador.webp'
+import MaquinaLavar from '../../public/maquinadelavarlouça.jpg'
+import Frigobar from '../../public/frigobarnew.png'
+import AppleWatch from '../../public/applewatch.webp'
+import KitKeune from '../../public/kitkeune.webp'
 
 import {
   BoxContainer,
@@ -95,10 +95,27 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>App ShopeeCash</title>
-        <meta name="description" content="App shopee cash" />
+        <title>Shopee Elite Club - Programa Premium</title>
+        <meta
+          name="description"
+          content="Club Shopee Elite - Programa exclusivo para membros VIP"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo2.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
         <script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           async
@@ -109,14 +126,55 @@ export default function Home() {
       <MainContainer className={Vietnam.className}>
         {page === 0 ? (
           <MainContent>
-            <Header price="114,26" />
+            <Header price="158,45" />
             <BoxContainer>
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  marginBottom: '0.5rem',
+                }}
+              >
+                <span
+                  style={{
+                    background: 'linear-gradient(135deg, #D4AF37, #F4E4B8)',
+                    padding: '0.3rem 1rem',
+                    borderRadius: '20px',
+                    fontSize: '0.75rem',
+                    fontWeight: '700',
+                    color: '#0A0A0A',
+                    letterSpacing: '1px',
+                  }}
+                >
+                  EXCLUSIVO VIP
+                </span>
+              </div>
               <h1>
-                Bem vindo ao aplicativo{' '}
-                <span style={{ color: '#ff580c' }}>Shopee Cash!</span>
+                Bem-vindo ao Club{' '}
+                <span
+                  style={{
+                    background: 'linear-gradient(135deg, #D4AF37, #F4E4B8)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  Shopee Elite
+                </span>
               </h1>
+              <p
+                style={{
+                  fontSize: '0.95rem',
+                  color: '#C0C0C0',
+                  fontStyle: 'italic',
+                  marginTop: '-0.5rem',
+                }}
+              >
+                Acesso restrito para membros selecionados
+              </p>
               <InputContainer>
-                <p>Digite o email utilizado na compra:</p>
+                <p>Digite o email do membro VIP:</p>
                 <input
                   type="email"
                   value={email}
@@ -129,7 +187,7 @@ export default function Home() {
                 {showEmailError && (
                   <p
                     style={{
-                      color: '#ff4444',
+                      color: '#D4AF37',
                       fontSize: '12px',
                       margin: '5px 0',
                     }}
@@ -171,27 +229,34 @@ export default function Home() {
 
               <p
                 style={{
-                  fontSize: '1rem',
-                  color: '#333',
+                  fontSize: '1.1rem',
+                  color: '#E0E0E0',
                   marginBottom: '1.5rem',
-                  lineHeight: '1.5',
+                  lineHeight: '1.6',
                 }}
               >
-                🎉 <strong>Parabéns!</strong> Seu acesso foi liberado e você já
-                tem{' '}
-                <span style={{ color: '#ff580c', fontWeight: 'bold' }}>
-                  R$ 114,26
-                </span>{' '}
-                disponível para saque!
+                💎 <strong style={{ color: '#D4AF37' }}>Parabéns!</strong> Você
+                foi selecionado para o Club Elite. Seu saldo inicial é de{' '}
+                <span
+                  data-premium-number="true"
+                  style={{
+                    color: '#D4AF37',
+                    fontWeight: 'bold',
+                    textShadow: '0 0 10px rgba(212, 175, 55, 0.5)',
+                  }}
+                >
+                  R$ 158,45
+                </span>
               </p>
 
               <div
                 style={{
-                  backgroundColor: '#f8f9fa',
+                  backgroundColor: 'rgba(212, 175, 55, 0.1)',
                   borderRadius: '12px',
-                  padding: '1rem',
+                  padding: '1.5rem',
                   marginBottom: '1.5rem',
-                  border: '2px solid #e9ecef',
+                  border: '1px solid rgba(212, 175, 55, 0.3)',
+                  boxShadow: '0 4px 15px rgba(212, 175, 55, 0.2)',
                 }}
               >
                 <div
@@ -202,16 +267,23 @@ export default function Home() {
                     marginBottom: '1rem',
                   }}
                 >
-                  <Gift size={20} color="#ff580c" weight="fill" />
-                  <h3 style={{ margin: '0', fontSize: '1rem', color: '#333' }}>
-                    Como funciona?
+                  <Gift size={22} color="#D4AF37" weight="fill" />
+                  <h3
+                    style={{
+                      margin: '0',
+                      fontSize: '1.1rem',
+                      color: '#F4E4B8',
+                      fontWeight: '700',
+                    }}
+                  >
+                    Programa de Elite
                   </h3>
                 </div>
                 <div
                   style={{
                     textAlign: 'left',
-                    fontSize: '0.9rem',
-                    color: '#555',
+                    fontSize: '0.95rem',
+                    color: '#C0C0C0',
                   }}
                 >
                   <p
@@ -222,8 +294,10 @@ export default function Home() {
                       gap: '0.5rem',
                     }}
                   >
-                    <span style={{ color: '#ff580c' }}>1.</span> Responda
-                    perguntas sobre produtos
+                    <span style={{ color: '#D4AF37', fontWeight: '700' }}>
+                      1.
+                    </span>{' '}
+                    Avalie produtos premium exclusivos
                   </p>
                   <p
                     style={{
@@ -233,8 +307,10 @@ export default function Home() {
                       gap: '0.5rem',
                     }}
                   >
-                    <span style={{ color: '#ff580c' }}>2.</span> Ganhe dinheiro
-                    por cada resposta
+                    <span style={{ color: '#D4AF37', fontWeight: '700' }}>
+                      2.
+                    </span>{' '}
+                    Receba recompensas em dinheiro real
                   </p>
                   <p
                     style={{
@@ -244,8 +320,10 @@ export default function Home() {
                       gap: '0.5rem',
                     }}
                   >
-                    <span style={{ color: '#ff580c' }}>3.</span> Saque direto na
-                    sua conta PIX
+                    <span style={{ color: '#D4AF37', fontWeight: '700' }}>
+                      3.
+                    </span>{' '}
+                    Saque instantâneo via PIX VIP
                   </p>
                 </div>
               </div>
@@ -255,50 +333,50 @@ export default function Home() {
                   display: 'flex',
                   alignItems: 'center',
                   gap: '0.8rem',
-                  backgroundColor: '#fff3cd',
+                  backgroundColor: 'rgba(212, 175, 55, 0.15)',
                   borderRadius: '8px',
-                  padding: '0.8rem',
-                  border: '1px solid #ffeaa7',
+                  padding: '1rem',
+                  border: '1px solid rgba(212, 175, 55, 0.4)',
                   marginBottom: '1.5rem',
                 }}
               >
-                <Clock size={18} color="#856404" />
+                <Clock size={20} color="#D4AF37" weight="fill" />
                 <span
                   style={{
-                    fontSize: '0.85rem',
-                    color: '#856404',
-                    fontWeight: '500',
+                    fontSize: '0.9rem',
+                    color: '#F4E4B8',
+                    fontWeight: '600',
                   }}
                 >
-                  ⏰ Você é um dos poucos a conseguir acesso! Não perca essa
-                  oportunidade única.
+                  ⏰ Apenas 50 membros selecionados por mês. Você é um dos
+                  escolhidos.
                 </span>
               </div>
 
               <div>
                 <button onClick={() => setPage(2)}>
-                  <Star size={20} color="#fff" weight="fill" />
-                  Começar a Ganhar Agora!
+                  <Star size={20} color="#0A0A0A" weight="fill" />
+                  Iniciar Programa Elite
                 </button>
               </div>
             </BoxContainer>
             <SeguroContainer>
-              <LockSimple size={15} color="#fff" weight="fill" />
-              <p>100% Seguro e Confiável</p>
+              <LockSimple size={18} color="#0A0A0A" weight="fill" />
+              <p>Proteção Premium Garantida</p>
             </SeguroContainer>
           </MainContent>
         ) : page === 2 ? (
           <MainContent>
-            <Header price="137,06" />
+            <Header price="198,75" />
             <BoxContainer3>
               <Questionario
-                ganhos="22,80"
-                marca="Fone Bluetooth JBL"
-                foto={FoneJBL}
-                pergunta1="Sobre este Fone Bluetooth JBL, você já teve interesse em adquirir esse produto?"
+                ganhos="40,30"
+                marca="AirPods Pro"
+                foto={AirPodsPro}
+                pergunta1="Sobre o AirPods Pro, você já teve interesse em adquirir esse produto?"
                 resposta1="Sim"
                 resposta2="Não"
-                pergunta2="Você investiria R$ 89,90 nesse produto?"
+                pergunta2="Você investiria R$ 1.899,00 nesse produto?"
                 resposta3="Sim"
                 resposta4="Não"
                 onAllAnswered={setEvaluation1Completed}
@@ -312,35 +390,36 @@ export default function Home() {
                   cursor: evaluation1Completed ? 'pointer' : 'not-allowed',
                 }}
               >
-                <PaperPlaneRight size={20} color="#fff" /> Enviar respostas
+                <PaperPlaneRight size={20} color="#0A0A0A" weight="fill" />{' '}
+                Enviar Avaliação Elite
               </button>
               {!evaluation1Completed && (
                 <p
                   style={{
-                    color: '#ff4444',
+                    color: '#D4AF37',
                     fontSize: '0.9rem',
                     textAlign: 'center',
                     marginTop: '0.5rem',
                     fontWeight: '500',
                   }}
                 >
-                  ⚠️ Responda todas as perguntas para continuar
+                  ⚠️ Complete todas as avaliações premium
                 </p>
               )}
             </BoxContainer3>
           </MainContent>
         ) : page === 3 ? (
           <MainContent>
-            <Header price="165,56" />
+            <Header price="247,30" />
             <BoxContainer4>
               <Questionario
-                ganhos="28,50"
-                marca="Smartwatch Xiaomi"
-                foto={Smartwatch}
-                pergunta1="Sobre este Smartwatch Xiaomi, você já teve interesse em adquirir esse produto?"
+                ganhos="48,55"
+                marca="Robô Aspirador Xiaomi"
+                foto={RoboAspirador}
+                pergunta1="Sobre o Robô Aspirador Xiaomi, você já teve interesse em adquirir esse produto?"
                 resposta1="Sim"
                 resposta2="Não"
-                pergunta2="Você investiria R$ 129,90 nesse produto?"
+                pergunta2="Você investiria R$ 1.299,00 nesse produto?"
                 resposta3="Sim"
                 resposta4="Não"
                 onAllAnswered={setEvaluation2Completed}
@@ -354,35 +433,36 @@ export default function Home() {
                   cursor: evaluation2Completed ? 'pointer' : 'not-allowed',
                 }}
               >
-                <PaperPlaneRight size={20} color="#fff" /> Enviar respostas
+                <PaperPlaneRight size={20} color="#0A0A0A" weight="fill" />{' '}
+                Enviar Avaliação Elite
               </button>
               {!evaluation2Completed && (
                 <p
                   style={{
-                    color: '#ff4444',
+                    color: '#D4AF37',
                     fontSize: '0.9rem',
                     textAlign: 'center',
                     marginTop: '0.5rem',
                     fontWeight: '500',
                   }}
                 >
-                  ⚠️ Responda todas as perguntas para continuar
+                  ⚠️ Complete todas as avaliações premium
                 </p>
               )}
             </BoxContainer4>
           </MainContent>
         ) : page === 4 ? (
           <MainContent>
-            <Header price="194,06" />
+            <Header price="298,85" />
             <BoxContainer5>
               <Questionario
-                ganhos="34,90"
-                marca="Power Bank 20000mAh"
-                foto={PowerBank}
-                pergunta1="Sobre este Power Bank 20000mAh, você já teve interesse em adquirir esse produto?"
+                ganhos="51,55"
+                marca="Máquina de Lavar Louça"
+                foto={MaquinaLavar}
+                pergunta1="Sobre a Máquina de Lavar Louça, você já teve interesse em adquirir esse produto?"
                 resposta1="Sim"
                 resposta2="Não"
-                pergunta2="Você investiria R$ 45,90 nesse produto?"
+                pergunta2="Você investiria R$ 2.499,00 nesse produto?"
                 resposta3="Sim"
                 resposta4="Não"
                 onAllAnswered={setEvaluation3Completed}
@@ -396,35 +476,36 @@ export default function Home() {
                   cursor: evaluation3Completed ? 'pointer' : 'not-allowed',
                 }}
               >
-                <PaperPlaneRight size={20} color="#fff" /> Enviar respostas
+                <PaperPlaneRight size={20} color="#0A0A0A" weight="fill" />{' '}
+                Enviar Avaliação Elite
               </button>
               {!evaluation3Completed && (
                 <p
                   style={{
-                    color: '#ff4444',
+                    color: '#D4AF37',
                     fontSize: '0.9rem',
                     textAlign: 'center',
                     marginTop: '0.5rem',
                     fontWeight: '500',
                   }}
                 >
-                  ⚠️ Responda todas as perguntas para continuar
+                  ⚠️ Complete todas as avaliações premium
                 </p>
               )}
             </BoxContainer5>
           </MainContent>
         ) : page === 5 ? (
           <MainContent>
-            <Header price="228,96" />
+            <Header price="347,20" />
             <BoxContainer6>
               <Questionario
-                ganhos="32,60"
-                marca="Copo Stanley"
-                foto={CopoStanley}
-                pergunta1="Sobre este Copo Stanley, você já teve interesse em adquirir esse produto?"
+                ganhos="48,35"
+                marca="Frigobar Consul"
+                foto={Frigobar}
+                pergunta1="Sobre o Frigobar Consul, você já teve interesse em adquirir esse produto?"
                 resposta1="Sim"
                 resposta2="Não"
-                pergunta2="Você investiria R$ 89,90 nesse produto?"
+                pergunta2="Você investiria R$ 899,00 nesse produto?"
                 resposta3="Sim"
                 resposta4="Não"
                 onAllAnswered={setEvaluation4Completed}
@@ -438,35 +519,36 @@ export default function Home() {
                   cursor: evaluation4Completed ? 'pointer' : 'not-allowed',
                 }}
               >
-                <PaperPlaneRight size={20} color="#fff" /> Enviar respostas
+                <PaperPlaneRight size={20} color="#0A0A0A" weight="fill" />{' '}
+                Enviar Avaliação Elite
               </button>
               {!evaluation4Completed && (
                 <p
                   style={{
-                    color: '#ff4444',
+                    color: '#D4AF37',
                     fontSize: '0.9rem',
                     textAlign: 'center',
                     marginTop: '0.5rem',
                     fontWeight: '500',
                   }}
                 >
-                  ⚠️ Responda todas as perguntas para continuar
+                  ⚠️ Complete todas as avaliações premium
                 </p>
               )}
             </BoxContainer6>
           </MainContent>
         ) : page === 6 ? (
           <MainContent>
-            <Header price="261,56" />
+            <Header price="391,50" />
             <BoxContainer3>
               <Questionario
-                ganhos="31,20"
-                marca="Tênis Meia Feminino"
-                foto={TenisMeia}
-                pergunta1="Sobre este Tênis Meia Feminino, você já teve interesse em adquirir esse produto?"
+                ganhos="44,30"
+                marca="Apple Watch Series 9"
+                foto={AppleWatch}
+                pergunta1="Sobre o Apple Watch Series 9, você já teve interesse em adquirir esse produto?"
                 resposta1="Sim"
                 resposta2="Não"
-                pergunta2="Você investiria R$ 28,90 nesse produto?"
+                pergunta2="Você investiria R$ 3.499,00 nesse produto?"
                 resposta3="Sim"
                 resposta4="Não"
                 onAllAnswered={setEvaluation5Completed}
@@ -480,35 +562,36 @@ export default function Home() {
                   cursor: evaluation5Completed ? 'pointer' : 'not-allowed',
                 }}
               >
-                <PaperPlaneRight size={20} color="#fff" /> Enviar respostas
+                <PaperPlaneRight size={20} color="#0A0A0A" weight="fill" />{' '}
+                Enviar Avaliação Elite
               </button>
               {!evaluation5Completed && (
                 <p
                   style={{
-                    color: '#ff4444',
+                    color: '#D4AF37',
                     fontSize: '0.9rem',
                     textAlign: 'center',
                     marginTop: '0.5rem',
                     fontWeight: '500',
                   }}
                 >
-                  ⚠️ Responda todas as perguntas para continuar
+                  ⚠️ Complete todas as avaliações premium
                 </p>
               )}
             </BoxContainer3>
           </MainContent>
         ) : page === 7 ? (
           <MainContent>
-            <Header price="293,96" />
+            <Header price="418,95" />
             <BoxContainer3>
               <Questionario
-                ganhos="29,70"
-                marca="Mesa de Cabeceira Retro"
-                foto={MesaCabeceira}
-                pergunta1="Sobre esta Mesa de Cabeceira Retro, você já teve interesse em adquirir esse produto?"
+                ganhos="27,45"
+                marca="Kit Shampoo e Condicionador Keune"
+                foto={KitKeune}
+                pergunta1="Sobre o Kit Shampoo e Condicionador Keune, você já teve interesse em adquirir esse produto?"
                 resposta1="Sim"
                 resposta2="Não"
-                pergunta2="Você investiria R$ 27,90 nesse produto?"
+                pergunta2="Você investiria R$ 299,00 nesse produto?"
                 resposta3="Sim"
                 resposta4="Não"
                 onAllAnswered={setEvaluation6Completed}
@@ -522,59 +605,62 @@ export default function Home() {
                   cursor: evaluation6Completed ? 'pointer' : 'not-allowed',
                 }}
               >
-                <PaperPlaneRight size={20} color="#fff" /> Enviar respostas
+                <PaperPlaneRight size={20} color="#0A0A0A" weight="fill" />{' '}
+                Enviar Avaliação Elite
               </button>
               {!evaluation6Completed && (
                 <p
                   style={{
-                    color: '#ff4444',
+                    color: '#D4AF37',
                     fontSize: '0.9rem',
                     textAlign: 'center',
                     marginTop: '0.5rem',
                     fontWeight: '500',
                   }}
                 >
-                  ⚠️ Responda todas as perguntas para continuar
+                  ⚠️ Complete todas as avaliações premium
                 </p>
               )}
             </BoxContainer3>
           </MainContent>
         ) : page === 8 ? (
           <MainContent>
-            <Header price="293,96" />
+            <Header price="418,95" />
             <ModalOverlay>
               <ModalContent onClick={(e) => e.stopPropagation()}>
                 <Image alt="check" quality={100} src={Check} width={130} />
                 <h2
                   style={{
-                    fontSize: '2.5rem',
+                    fontSize: '2.8rem',
                     fontWeight: '700',
                     marginBottom: '1rem',
+                    color: '#F4E4B8',
+                    textShadow: '0 2px 20px rgba(212, 175, 55, 0.5)',
                   }}
                 >
-                  Parabéns!
+                  💎 Parabéns, Membro Elite!
                 </h2>
-                <p
-                  style={{
-                    fontSize: '1.3rem',
-                    lineHeight: '1.6',
-                    marginBottom: '0.8rem',
-                    fontWeight: '600',
-                  }}
-                >
-                  Você acumulou R$ 293,96 por ter respondido as pesquisas!
-                </p>
+                  <p
+                    style={{
+                      fontSize: '1.4rem',
+                      lineHeight: '1.6',
+                      marginBottom: '0.8rem',
+                      fontWeight: '700',
+                      color: '#D4AF37',
+                    }}
+                  >
+                    Você acumulou R$ <span data-premium-number="true">418,95</span> em recompensas premium!
+                  </p>
                 <p
                   style={{
                     fontSize: '1.1rem',
-                    lineHeight: '1.5',
-                    color: '#666',
+                    lineHeight: '1.6',
+                    color: '#C0C0C0',
                     marginBottom: '1.5rem',
                   }}
                 >
-                  Suas avaliações ajudaram muito a Shopee a melhorar nossos
-                  produtos e serviços. Obrigado pela sua contribuição valiosa!
-                  🙏
+                  Suas avaliações exclusivas foram fundamentais. Agradecemos sua
+                  contribuição valiosa para o Club Elite! 🏆
                 </p>
 
                 <ModalButton
@@ -587,8 +673,9 @@ export default function Home() {
                     src={Pix}
                     width={28}
                     height={28}
+                    style={{ filter: 'brightness(0)' }}
                   />
-                  SACAR AGORA!
+                  Saque VIP Prioritário
                 </ModalButton>
               </ModalContent>
             </ModalOverlay>
