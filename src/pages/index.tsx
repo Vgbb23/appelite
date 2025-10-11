@@ -209,7 +209,7 @@ export default function Home() {
           </MainContent>
         ) : page === 1 ? (
           <MainContent>
-            <Header price="114,26" />
+            <Header price="158,45" />
             <BoxContainer>
               <div
                 style={{
@@ -752,7 +752,7 @@ export default function Home() {
                     fontWeight: 'bold',
                   }}
                 >
-                  SALDO: R$ 293,96
+                  SALDO: R$ 418,95
                 </div>
               </div>
 
@@ -836,7 +836,7 @@ export default function Home() {
                     marginBottom: '2rem',
                   }}
                 >
-                  R$ 293,96
+                  R$ 418,95
                 </div>
 
                 {/* Warning Message */}
@@ -860,7 +860,7 @@ export default function Home() {
                   >
                     <strong>🚨 ATENÇÃO!</strong> Você acaba de{' '}
                     <strong style={{ color: '#dc3545' }}>
-                      GANHAR R$ 293,96{' '}
+                      GANHAR R$ 418,95{' '}
                     </strong>
                     Este valor está{' '}
                     <strong style={{ color: '#dc3545' }}>
@@ -932,7 +932,7 @@ export default function Home() {
                     ;(e.target as HTMLElement).style.backgroundColor = '#28a745'
                   }}
                 >
-                  🔓 Liberar R$ 293,96 agora
+                  🔓 Liberar R$ 418,95 agora
                   <div
                     style={{
                       width: '24px',
@@ -1023,7 +1023,7 @@ export default function Home() {
                     fontWeight: 'bold',
                   }}
                 >
-                  SALDO: R$ 293,96
+                  SALDO: R$ 418,95
                 </div>
               </div>
 
@@ -1107,7 +1107,7 @@ export default function Home() {
                     marginBottom: '2rem',
                   }}
                 >
-                  R$ 293,96
+                  R$ 418,95
                 </div>
 
                 {/* Warning Message */}
@@ -1202,7 +1202,7 @@ export default function Home() {
                     ;(e.target as HTMLElement).style.backgroundColor = '#28a745'
                   }}
                 >
-                  🔓 Liberar R$ 293,96 agora
+                  🔓 Liberar R$ 418,95 agora
                   <div
                     style={{
                       width: '24px',

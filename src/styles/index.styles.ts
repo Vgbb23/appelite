@@ -708,6 +708,14 @@ export const ModalContent = styled('div', {
     fontFamily: "'Playfair Display', serif",
     textShadow: '0 2px 15px rgba(212, 175, 55, 0.4)',
     letterSpacing: '1px',
+
+    '@media (max-width: 768px)': {
+      fontSize: '1.8rem',
+    },
+
+    '@media (max-width: 480px)': {
+      fontSize: '1.5rem',
+    },
   },
 
   p: {
@@ -716,6 +724,30 @@ export const ModalContent = styled('div', {
     fontWeight: '400',
     lineHeight: '1.6',
     fontFamily: "'Playfair Display', serif",
+
+    '@media (max-width: 768px)': {
+      fontSize: '.9rem',
+      lineHeight: '1.5',
+    },
+
+    '@media (max-width: 480px)': {
+      fontSize: '.85rem',
+      lineHeight: '1.4',
+    },
+  },
+
+  '@media (max-width: 768px)': {
+    padding: '2rem 1.5rem',
+    borderRadius: '20px',
+    gap: '1rem',
+    margin: '1rem',
+  },
+
+  '@media (max-width: 480px)': {
+    padding: '1.5rem 1rem',
+    borderRadius: '15px',
+    gap: '.8rem',
+    margin: '.5rem',
   },
 })
 
@@ -765,5 +797,19 @@ export const ModalButton = styled('a', {
 
   '&:active': {
     transform: 'translateY(-1px) scale(1.02)',
+  },
+
+  '@media (max-width: 768px)': {
+    padding: '1rem 2rem',
+    fontSize: '1.2rem',
+    borderRadius: '40px',
+    gap: '.6rem',
+  },
+
+  '@media (max-width: 480px)': {
+    padding: '.8rem 1.5rem',
+    fontSize: '1rem',
+    borderRadius: '35px',
+    gap: '.5rem',
   },
 })
