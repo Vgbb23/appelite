@@ -63,7 +63,10 @@ export default function Questionario({
 
   // Verifica se todas as perguntas foram respondidas
   useEffect(() => {
-    const allAnswered = selectedButton !== null && selectedButton2 !== null && selectedButton3 !== null
+    const allAnswered =
+      selectedButton !== null &&
+      selectedButton2 !== null &&
+      selectedButton3 !== null
     if (onAllAnswered) {
       onAllAnswered(allAnswered)
     }
