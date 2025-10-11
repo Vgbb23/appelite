@@ -11,7 +11,7 @@ export const HeaderContainer = styled('div', {
   boxShadow: '0 4px 30px rgba(212, 175, 55, 0.2)',
   position: 'relative',
   zIndex: '1000',
-  
+
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -34,13 +34,15 @@ export const HeaderContent = styled('div', {
 
   p: {
     color: '#0A0A0A',
-    background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
+    background:
+      'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
     padding: '1rem 2.5rem',
     borderRadius: 50,
     fontWeight: '700',
     fontSize: '1.5rem',
     letterSpacing: '1px',
-    boxShadow: '0 4px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+    boxShadow:
+      '0 4px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
     border: '1px solid #F4E4B8',
     textTransform: 'uppercase',
     fontFamily: "'Playfair Display', serif",
@@ -64,19 +66,20 @@ export const HeaderContent = styled('div', {
     top: '0rem',
     width: '100%',
     padding: '1rem',
-    background: 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)',
+    background:
+      'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)',
   },
 })
 
 export const HeaderImg = styled('div', {
   filter: 'drop-shadow(0 0 10px rgba(212, 175, 55, 0.3))',
   transition: 'all 0.3s ease',
-  
+
   '&:hover': {
     transform: 'scale(1.05)',
     filter: 'drop-shadow(0 0 20px rgba(212, 175, 55, 0.5))',
   },
-  
+
   '@media (max-width: 768px)': {
     display: 'none',
   },
@@ -85,7 +88,7 @@ export const HeaderImg = styled('div', {
 export const HeaderImg2 = styled('div', {
   display: 'none',
   filter: 'drop-shadow(0 0 10px rgba(212, 175, 55, 0.3))',
-  
+
   '@media (max-width: 768px)': {
     display: 'block',
   },

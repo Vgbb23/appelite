@@ -92,7 +92,9 @@ export default function Questionario({
         </h3>
       </QuestionContainer>
       <RespondaContainer>
-        <h3>💎 GANHE R$ <span data-premium-number="true">{ganhos}</span> VIP</h3>
+        <h3>
+          💎 GANHE R$ <span data-premium-number="true">{ganhos}</span> VIP
+        </h3>
         <p>Transferência Premium via PIX</p>
       </RespondaContainer>
       <Image alt="produto" quality={100} src={foto} width={230} height={230} />

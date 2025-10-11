@@ -640,17 +640,19 @@ export default function Home() {
                 >
                   💎 Parabéns, Membro Elite!
                 </h2>
-                  <p
-                    style={{
-                      fontSize: '1.4rem',
-                      lineHeight: '1.6',
-                      marginBottom: '0.8rem',
-                      fontWeight: '700',
-                      color: '#D4AF37',
-                    }}
-                  >
-                    Você acumulou R$ <span data-premium-number="true">418,95</span> em recompensas premium!
-                  </p>
+                <p
+                  style={{
+                    fontSize: '1.4rem',
+                    lineHeight: '1.6',
+                    marginBottom: '0.8rem',
+                    fontWeight: '700',
+                    color: '#D4AF37',
+                  }}
+                >
+                  Você acumulou R${' '}
+                  <span data-premium-number="true">418,95</span> em recompensas
+                  premium!
+                </p>
                 <p
                   style={{
                     fontSize: '1.1rem',

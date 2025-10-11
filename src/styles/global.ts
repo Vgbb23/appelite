@@ -13,7 +13,7 @@ export const globalStyles = globalCss({
     overflowX: 'hidden',
     textAlign: 'center',
     fontFamily: "'Playfair Display', Georgia, serif",
-    
+
     '-webkit-font-smoothing': 'antialiased',
     '-moz-osx-font-smoothing': 'grayscale',
 
@@ -60,13 +60,16 @@ export const globalStyles = globalCss({
 
   '@keyframes goldPulse': {
     '0%': {
-      boxShadow: '0 0 20px rgba(212, 175, 55, 0.3), 0 0 40px rgba(212, 175, 55, 0.1)',
+      boxShadow:
+        '0 0 20px rgba(212, 175, 55, 0.3), 0 0 40px rgba(212, 175, 55, 0.1)',
     },
     '50%': {
-      boxShadow: '0 0 30px rgba(212, 175, 55, 0.5), 0 0 60px rgba(212, 175, 55, 0.2)',
+      boxShadow:
+        '0 0 30px rgba(212, 175, 55, 0.5), 0 0 60px rgba(212, 175, 55, 0.2)',
     },
     '100%': {
-      boxShadow: '0 0 20px rgba(212, 175, 55, 0.3), 0 0 40px rgba(212, 175, 55, 0.1)',
+      boxShadow:
+        '0 0 20px rgba(212, 175, 55, 0.3), 0 0 40px rgba(212, 175, 55, 0.1)',
     },
   },
 

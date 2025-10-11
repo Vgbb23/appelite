@@ -72,7 +72,7 @@ export const SelectConent = styled('div', {
     borderRadius: '12px',
     border: '2px solid rgba(212, 175, 55, 0.3)',
     cursor: 'pointer',
-    
+
     '&:hover': {
       transform: 'scale(1.1)',
       boxShadow: '0 4px 15px rgba(212, 175, 55, 0.4)',
@@ -97,7 +97,7 @@ export const SelectConent2 = styled('div', {
     maxWidth: '200px',
     fontWeight: '600',
     letterSpacing: '0.5px',
-    
+
     '&:hover': {
       transform: 'scale(1.05)',
       boxShadow: '0 4px 20px rgba(212, 175, 55, 0.4)',

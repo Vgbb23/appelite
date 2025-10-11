@@ -12,7 +12,7 @@ export const MainContainer = styled('main', {
   alignItems: 'center',
   background: 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)',
   position: 'relative',
-  
+
   '&::before': {
     content: '""',
     position: 'fixed',
@@ -20,7 +20,8 @@ export const MainContainer = styled('main', {
     left: 0,
     right: 0,
     bottom: 0,
-    background: 'radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%)',
+    background:
+      'radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%)',
     pointerEvents: 'none',
     zIndex: 1,
   },
@@ -61,9 +62,10 @@ export const BoxContainer = styled('div', {
   justifyContent: 'center',
   gap: '1.5rem',
   border: '2px solid #D4AF37',
-  boxShadow: '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
+  boxShadow:
+    '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
   position: 'relative',
-  
+
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -86,7 +88,8 @@ export const BoxContainer = styled('div', {
 
   button: {
     width: '100%',
-    background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
+    background:
+      'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
     borderRadius: '50px',
     fontSize: '1.1rem',
     fontWeight: '700',
@@ -99,13 +102,14 @@ export const BoxContainer = styled('div', {
     border: '2px solid #F4E4B8',
     cursor: 'pointer',
     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-    boxShadow: '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+    boxShadow:
+      '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
     letterSpacing: '1px',
     textTransform: 'uppercase',
     fontFamily: "'Playfair Display', serif",
     position: 'relative',
     overflow: 'hidden',
-    
+
     '&::before': {
       content: '""',
       position: 'absolute',
@@ -113,14 +117,16 @@ export const BoxContainer = styled('div', {
       left: '-100%',
       width: '100%',
       height: '100%',
-      background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)',
+      background:
+        'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)',
       transition: 'left 0.5s',
     },
 
     '&:hover:not(:disabled)': {
       transform: 'translateY(-3px) scale(1.02)',
-      boxShadow: '0 8px 35px rgba(212, 175, 55, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.5)',
-      
+      boxShadow:
+        '0 8px 35px rgba(212, 175, 55, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.5)',
+
       '&::before': {
         left: '100%',
       },
@@ -163,11 +169,11 @@ export const BoxContainer = styled('div', {
     transition: 'all 0.3s ease',
     background: '#1A1A1A',
     color: '#FFFFFF',
-    
+
     '&::placeholder': {
       color: '#666',
     },
-    
+
     '&:focus': {
       borderColor: '#F4E4B8',
       boxShadow: '0 0 0 4px rgba(212, 175, 55, 0.2)',
@@ -187,11 +193,12 @@ export const BoxContainer3 = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '2rem',
-  boxShadow: '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
+  boxShadow:
+    '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
   background: 'linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%)',
   border: '2px solid #D4AF37',
   position: 'relative',
-  
+
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -214,7 +221,8 @@ export const BoxContainer3 = styled('div', {
 
   button: {
     width: '100%',
-    background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
+    background:
+      'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
     borderRadius: '50px',
     fontSize: '1rem',
     fontWeight: '700',
@@ -228,8 +236,9 @@ export const BoxContainer3 = styled('div', {
     letterSpacing: '1px',
     textTransform: 'uppercase',
     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-    boxShadow: '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
-    
+    boxShadow:
+      '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+
     '&:hover:not(:disabled)': {
       transform: 'translateY(-3px) scale(1.02)',
       boxShadow: '0 8px 35px rgba(212, 175, 55, 0.6)',
@@ -268,11 +277,12 @@ export const BoxContainer4 = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '2rem',
-  boxShadow: '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
+  boxShadow:
+    '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
   background: 'linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%)',
   border: '2px solid #D4AF37',
   position: 'relative',
-  
+
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -295,7 +305,8 @@ export const BoxContainer4 = styled('div', {
 
   button: {
     width: '100%',
-    background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
+    background:
+      'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
     borderRadius: '50px',
     fontSize: '1rem',
     fontWeight: '700',
@@ -309,8 +320,9 @@ export const BoxContainer4 = styled('div', {
     letterSpacing: '1px',
     textTransform: 'uppercase',
     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-    boxShadow: '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
-    
+    boxShadow:
+      '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+
     '&:hover:not(:disabled)': {
       transform: 'translateY(-3px) scale(1.02)',
       boxShadow: '0 8px 35px rgba(212, 175, 55, 0.6)',
@@ -349,11 +361,12 @@ export const BoxContainer5 = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '2rem',
-  boxShadow: '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
+  boxShadow:
+    '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
   background: 'linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%)',
   border: '2px solid #D4AF37',
   position: 'relative',
-  
+
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -376,7 +389,8 @@ export const BoxContainer5 = styled('div', {
 
   button: {
     width: '100%',
-    background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
+    background:
+      'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
     borderRadius: '50px',
     fontSize: '1rem',
     fontWeight: '700',
@@ -390,8 +404,9 @@ export const BoxContainer5 = styled('div', {
     letterSpacing: '1px',
     textTransform: 'uppercase',
     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-    boxShadow: '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
-    
+    boxShadow:
+      '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+
     '&:hover:not(:disabled)': {
       transform: 'translateY(-3px) scale(1.02)',
       boxShadow: '0 8px 35px rgba(212, 175, 55, 0.6)',
@@ -430,11 +445,12 @@ export const BoxContainer6 = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '2rem',
-  boxShadow: '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
+  boxShadow:
+    '0 10px 50px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
   background: 'linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%)',
   border: '2px solid #D4AF37',
   position: 'relative',
-  
+
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -457,7 +473,8 @@ export const BoxContainer6 = styled('div', {
 
   button: {
     width: '100%',
-    background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
+    background:
+      'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
     borderRadius: '50px',
     fontSize: '1rem',
     fontWeight: '700',
@@ -471,8 +488,9 @@ export const BoxContainer6 = styled('div', {
     letterSpacing: '1px',
     textTransform: 'uppercase',
     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-    boxShadow: '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
-    
+    boxShadow:
+      '0 4px 25px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+
     '&:hover:not(:disabled)': {
       transform: 'translateY(-3px) scale(1.02)',
       boxShadow: '0 8px 35px rgba(212, 175, 55, 0.6)',
@@ -530,7 +548,8 @@ export const InputContainer = styled('div', {
 
     '&:focus': {
       borderColor: '#F4E4B8',
-      boxShadow: '0 0 0 4px rgba(212, 175, 55, 0.2), 0 0 20px rgba(212, 175, 55, 0.3)',
+      boxShadow:
+        '0 0 0 4px rgba(212, 175, 55, 0.2), 0 0 20px rgba(212, 175, 55, 0.3)',
       outline: 'none',
       background: '#2A2A2A',
     },
@@ -552,7 +571,8 @@ export const SeguroContainer = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
   background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #D4AF37 100%)',
-  boxShadow: '0 10px 30px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+  boxShadow:
+    '0 10px 30px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
   gap: '.5rem',
   borderRadius: 50,
   fontWeight: '700',
@@ -565,7 +585,7 @@ export const SeguroContainer = styled('div', {
   border: '2px solid #F4E4B8',
   position: 'relative',
   overflow: 'hidden',
-  
+
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -573,7 +593,8 @@ export const SeguroContainer = styled('div', {
     left: '-100%',
     width: '100%',
     height: '100%',
-    background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)',
+    background:
+      'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)',
     animation: 'shimmer 3s infinite linear',
   },
 
@@ -582,7 +603,7 @@ export const SeguroContainer = styled('div', {
     padding: '1rem 1.5rem',
     fontSize: '0.9rem',
   },
-  
+
   svg: {
     filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3))',
   },
@@ -664,9 +685,10 @@ export const ModalContent = styled('div', {
   alignItems: 'center',
   gap: '1.5rem',
   border: '2px solid #D4AF37',
-  boxShadow: '0 20px 60px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
+  boxShadow:
+    '0 20px 60px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.1)',
   position: 'relative',
-  
+
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -714,11 +736,12 @@ export const ModalButton = styled('a', {
   textTransform: 'uppercase',
   fontFamily: "'Playfair Display', serif",
   transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-  boxShadow: '0 6px 30px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+  boxShadow:
+    '0 6px 30px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
   cursor: 'pointer',
   position: 'relative',
   overflow: 'hidden',
-  
+
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -726,19 +749,20 @@ export const ModalButton = styled('a', {
     left: '-100%',
     width: '100%',
     height: '100%',
-    background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)',
+    background:
+      'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)',
     transition: 'left 0.5s',
   },
-  
+
   '&:hover': {
     transform: 'translateY(-3px) scale(1.05)',
     boxShadow: '0 10px 40px rgba(212, 175, 55, 0.7)',
-    
+
     '&::before': {
       left: '100%',
     },
   },
-  
+
   '&:active': {
     transform: 'translateY(-1px) scale(1.02)',
   },
